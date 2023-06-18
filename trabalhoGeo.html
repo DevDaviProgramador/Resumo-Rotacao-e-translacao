@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rotação e Translação da Terra</title>
+    <link rel="stylesheet" href="stylesGEO.css">
+    <style>
+        /* Estilos adicionais para interatividade */
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rotação e Translação da Terra</h1>
+
+    <section id="section1">
+        <h2>1. Rotação da Terra</h2>
+        <button onclick="toggleDetails('section1')">Mostrar detalhes</button>
+        <div class="hide">
+            <ul>
+                <li>A rotação da Terra é o movimento de girar em torno do próprio eixo imaginário. Esse movimento leva aproximadamente 24 horas para ser completado, o que resulta na sucessão dos dias e das noites.</li>
+                <li>A inclinação do eixo terrestre é responsável pelas estações do ano. Quando um hemisfério está inclinado em direção ao Sol, ele recebe mais luz solar e experimenta o verão. Quando está inclinado para longe do Sol, ocorre o inverno.</li>
+            </ul>
+         <img src="https://images.educamaisbrasil.com.br/content/banco_de_imagens/guia-de-estudo/D/movimento-de-rotacao-fisica.jpg" alt="Imagem 1" class="centered-image">
+        </div>
+    </section>    
+
+    <section id="section2">
+        <h2>2. Translação da Terra</h2>
+        <button onclick="toggleDetails('section2')">Mostrar detalhes</button>
+        <div class="hide">
+            <ul>
+                <li>A translação da Terra é o movimento que a leva a orbitar ao redor do Sol. Esse movimento dura aproximadamente 365 dias e é responsável pela variação das estações do ano.</li>
+                <li>A translação é essencial para a existência da vida na Terra, pois determina a distribuição de luz solar, temperatura e padrões climáticos ao longo do ano.</li>
+            </ul>
+         <img src="https://s2.static.brasilescola.uol.com.br/be/2020/04/rotacao-e-translacao-da-terra.jpg" alt="Imagem 2" class="centered-image"> 
+        </div>
+    </section>    
+
+    <section id="section3">
+        <h2>3. Diferenças entre Rotação e Translação</h2>
+        <button onclick="toggleDetails('section3')">Mostrar detalhes</button>
+        <div class="hide">
+            <p>Existem diferenças fundamentais entre rotação e translação:</p>
+            <ul>
+                <li>Rotação envolve um movimento circular ao redor de um ponto fixo, enquanto a translação é um deslocamento linear em uma direção específica.</li>
+                <li>Rotação preserva os ângulos e distâncias entre os pontos do objeto, enquanto a translação preserva apenas as distâncias.</li>
+            </ul>
+         <img src="https://s4.static.brasilescola.uol.com.br/be/2021/01/movimentos-translacao.jpg" alt="Imagem 3" class="centered-image">
+        </div>
+    </section>
+
+    <section id="section4">
+        <h2>4. Aplicações da Rotação e Translação</h2>
+        <button onclick="toggleDetails('section4')">Mostrar detalhes</button>
+        <div class="hide">
+            <ul>
+                <li>As estações do ano são determinadas pela combinação da inclinação do eixo terrestre e o movimento de translação.</li>
+                <li>O movimento aparente do Sol no céu ao longo do dia é resultado da rotação da Terra.</li>
+                <li>A rotação e translação da Terra têm impacto na distribuição de luz solar, temperatura e padrões climáticos.</li>
+            </ul>
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKod78zLTeur6Sf55JGwK5pyA2owYDBiRTEA&usqp=CAU" alt="Imagem 4" class="centered-image">
+        </div>
+    </section>
+
+    <section id="section5">
+        <h2>5. Fusos Horários</h2>
+        <button onclick="toggleDetails('section5')">Mostrar detalhes</button>
+        <div class="hide">
+            <ul>
+                <li>Os fusos horários são divisões da Terra que determinam a diferença de horário em diferentes regiões do mundo. Eles são baseados na rotação da Terra e são uma forma de padronizar o tempo em diferentes partes do globo.</li>
+                <li>A Terra é dividida em 24 fusos horários principais, cada um representando uma hora de diferença em relação ao Coordinated Universal Time (UTC). À medida que você se move para o leste, o tempo aumenta em uma hora a cada fuso horário, enquanto que, ao se mover para o oeste, o tempo diminui em uma hora a cada fuso horário.</li>
+            </ul>
+         <img src="https://s2.static.brasilescola.uol.com.br/be/2022/01/mapa-dos-fusos-horarios.png" alt="Imagem 5" class="centered-image">
+        </div>
+    </section>    
+
+    <section id="section6">
+        <h2>6. Coordenadas Geográficas</h2>
+        <button onclick="toggleDetails('section6')">Mostrar detalhes</button>
+        <div class="hide">
+            <ul>
+                <li>As coordenadas geográficas são um sistema de referência utilizado para determinar a localização de um ponto na superfície da Terra.</li>
+                <li>Elas são compostas por duas medidas principais: latitude e longitude.</li>
+                <li>A latitude é a medida angular em graus, que indica a distância de um ponto em relação à linha do Equador. Varia de 0° a 90°, sendo 0° no Equador e 90° nos polos Norte e Sul.</li>
+                <li>A longitude é a medida angular em graus, que indica a distância de um ponto em relação ao meridiano de Greenwich, que é considerado o ponto de referência. Varia de 0° a 180°, tanto a leste quanto a oeste do meridiano de Greenwich.</li>
+            </ul>
+         <img src="https://4.bp.blogspot.com/-hTckBiFhmhc/W6ffOBqjaPI/AAAAAAAAUL8/4SDlULGRcvY0CYU99Okm5d3nqV5m_c_cgCLcBGAs/s1600/COORDENADAS%2BGEOGR%25C3%2581FICAS%2BATIVIDADE%2B2.jpg" alt="Imagem 6" class="centered-image">
+        </div>
+    </section>
+    
+    <footer>
+        <p>Conclusão: Neste trabalho, exploramos os conceitos de rotação e translação da Terra, suas características e efeitos no nosso planeta.</p>
+    </footer>
+
+    <script>
+        function toggleDetails(sectionId) {
+            var section = document.getElementById(sectionId);
+            var button = section.querySelector('button');
+            var content = section.querySelector('div');
+            content.classList.toggle('hide');
+            button.innerText = content.classList.contains('hide') ? 'Mostrar detalhes' : 'Ocultar detalhes';
+        }
+    </script>
+</body>
+</html>
